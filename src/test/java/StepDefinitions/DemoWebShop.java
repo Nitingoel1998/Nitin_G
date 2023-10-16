@@ -20,7 +20,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Dropdown {
+public class DemoWebShop {
 	public static WebDriver driver;
 	@Given("Open the browser")
 	public void open_the_browser() {

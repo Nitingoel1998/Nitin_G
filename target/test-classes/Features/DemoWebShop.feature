@@ -24,4 +24,6 @@ Feature: Title of your feature
  Scenario: navigating to Demo Web Shop Application
  Given Open the browser 
  When Enter the URL "https://demowebshop.tricentis.com/" 
- 
+ And Click on Register button
+ And Enter the details
+ And Click on Continue button
