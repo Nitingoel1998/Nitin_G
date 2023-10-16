@@ -46,10 +46,10 @@ public class DemoWebShop {
 
 	
 	
-//	@After
-//	public void tearDown() {
-//		driver.close();
-//		System.out.println("Browser Closed ");
-//	}
+	@After
+	public void tearDown() {
+		driver.close();
+		System.out.println("Browser Closed ");
+	}
 }
 
