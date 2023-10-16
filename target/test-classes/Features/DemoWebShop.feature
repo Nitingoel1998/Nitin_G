@@ -21,9 +21,13 @@ Feature: Title of your feature
   I want to use this template for my feature file
 
  @DemoWeb
- Scenario: navigating to Demo Web Shop Application
+ Scenario Outline: navigating to Demo Web Shop Application
  Given Open the browser 
  When Enter the URL "https://demowebshop.tricentis.com/" 
- And Click on Register button
- And Enter the details
- And Click on Continue button
+ And Click on register button
+ And Enter the details "<FirstName>" , "<LastName>" , "<Gender>" , "<Email>" and "<Password>"
+ Then Click on save
+
+    Examples:
+     | FirstName | LastName | Gender | Email | Password |
+     | Nitin | Goel | Male | mannugoel | Test@123 |
