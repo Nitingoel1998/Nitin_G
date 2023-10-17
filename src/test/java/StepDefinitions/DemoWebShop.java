@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import PageObjects.pagefactory;
 import org.testng.Assert;
 
 import PageObjects.DemoWebShopPage;
@@ -24,6 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DemoWebShop {
 	public static WebDriver driver;
 	public static DemoWebShopPage registerUser;
+	public static pagefactory l;
 	@Given("Open the browser")
 	public void open_the_browser() {
 		
@@ -41,6 +43,7 @@ public class DemoWebShop {
 
 	@When("Enter the URL {string}")
 	public void enter_the_URL(String url) {
+		 l = new pagefactory(driver);
 		registerUser = new DemoWebShopPage(driver);
 		driver.get(url);
 		
@@ -66,6 +69,31 @@ public class DemoWebShop {
 		registerUser.click_on_register_button();
 	}
 	
-	
+	@Then("click logged in")
+	public void click_logged_in() {
+       	
+		l.login().click();
+	}
+
+	@Then("enter username and password and click enter")
+	public void enter_username_and_password_and_click_enter() {
+		
+		l.getusername().sendKeys("mannugo@gmail.com");
+		l.getpasswordinLogin().sendKeys("Test@123");
+		l.getclick().click();
+	}
+	@Then("click phone and add to cart")
+
+	public void click_phone_and_add_to_cart() {
+
+		l.getElectronics().click();
+
+		l.getcellphone().click();
+
+		l.getaddtocart().click();
+
+		driver.quit();
+
+	}
 }
 
