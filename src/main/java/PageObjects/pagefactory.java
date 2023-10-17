@@ -7,7 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class pagefactory  {
 
+<<<<<<< HEAD
 	public pagefactory(WebDriver driver ) {
+=======
+	public pagefactory(WebDriver driver) {
+>>>>>>> Dev2
 		PageFactory.initElements(driver, this);
 
 	}
@@ -24,10 +28,40 @@ public class pagefactory  {
 	@FindBy (xpath = "(//input[@type='submit'])[2]")
 	private WebElement click;
 
+<<<<<<< HEAD
+=======
+	@FindBy(xpath="(//a[contains(text(),'Electronics')])[3]")
+
+    private WebElement Electronics;
+
+       @FindBy(xpath="(//*[@title='Show products in category Cell phones'])[3]")
+
+       private WebElement cellphone;
+
+       
+
+       @FindBy(xpath="(//input[@type='button'])[3]")
+
+        private WebElement AddToCart;
+
+       
+>>>>>>> Dev2
 
 public WebElement getusername() {
 		return username;
 	}
+<<<<<<< HEAD
+=======
+public WebElement getElectronics() {
+	return Electronics;
+}
+public WebElement getcellphone() {
+	return cellphone;
+}
+public WebElement getaddtocart() {
+	return AddToCart;
+}
+>>>>>>> Dev2
 public WebElement getclick() {
 	return click;
 }
