@@ -31,3 +31,13 @@ Feature: Title of your feature
     Examples:
      | FirstName | LastName | Gender | Email | Password |
      | Nitin | Goel | Male | mannugoel | Test@123 |
+     
+@cart
+Scenario: add cart
+
+Given Open the browser 
+When Enter the URL "https://demowebshop.tricentis.com/" 
+Then click logged in
+Then enter username and password and click enter
+
+Then click phone and add to cart
