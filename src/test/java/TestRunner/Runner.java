@@ -9,11 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "C:\\Users\\nitin.goel\\eclipse-workspace\\Nitin_G\\src\\test\\java\\Features\\DemoWebShop.feature",
 		glue={"StepDefinitions"},
-<<<<<<< HEAD
-		tags = "@login",
-=======
-		tags = "@cart",
->>>>>>> Dev2
+	tags = "@login and @cart",
+
 		dryRun=false,		
 		plugin= {"pretty"},
 		monochrome = true

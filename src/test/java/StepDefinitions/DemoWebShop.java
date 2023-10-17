@@ -43,11 +43,10 @@ public class DemoWebShop {
 
 	@When("Enter the URL {string}")
 	public void enter_the_URL(String url) {
-<<<<<<< HEAD
+
 		  l = new pagefactory(driver);	
-=======
-		 l = new pagefactory(driver);
->>>>>>> Dev2
+
+
 		registerUser = new DemoWebShopPage(driver);
 		driver.get(url);
 		
@@ -87,18 +86,7 @@ public class DemoWebShop {
 		l.getpasswordinLogin().sendKeys("Test@123");
 		l.getclick().click();
 	}
-<<<<<<< HEAD
 
-//	@Then("Click on save button")
-//	public void click_on_save_button() {
-//		
-//	
-//	    l.getSave().click();
-//		driver.quit();
-//	}
-
-	
-=======
 	@Then("click phone and add to cart")
 
 	public void click_phone_and_add_to_cart() {
@@ -112,6 +100,6 @@ public class DemoWebShop {
 		driver.quit();
 
 	}
->>>>>>> Dev2
+
 }
 

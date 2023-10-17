@@ -7,11 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class pagefactory  {
 
-<<<<<<< HEAD
+
 	public pagefactory(WebDriver driver ) {
-=======
-	public pagefactory(WebDriver driver) {
->>>>>>> Dev2
 		PageFactory.initElements(driver, this);
 
 	}
@@ -28,8 +25,7 @@ public class pagefactory  {
 	@FindBy (xpath = "(//input[@type='submit'])[2]")
 	private WebElement click;
 
-<<<<<<< HEAD
-=======
+
 	@FindBy(xpath="(//a[contains(text(),'Electronics')])[3]")
 
     private WebElement Electronics;
@@ -45,13 +41,12 @@ public class pagefactory  {
         private WebElement AddToCart;
 
        
->>>>>>> Dev2
+
 
 public WebElement getusername() {
 		return username;
 	}
-<<<<<<< HEAD
-=======
+
 public WebElement getElectronics() {
 	return Electronics;
 }
@@ -61,7 +56,7 @@ public WebElement getcellphone() {
 public WebElement getaddtocart() {
 	return AddToCart;
 }
->>>>>>> Dev2
+
 public WebElement getclick() {
 	return click;
 }

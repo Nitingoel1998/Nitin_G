@@ -32,9 +32,6 @@ Feature: Title of your feature
      | FirstName | LastName | Gender | Email | Password |
      | Nitin | Goel | Male | mannugoel | Test@123 |
      
-<<<<<<< HEAD
-
-
 @login
 Scenario: Click on login button and enter user and password and click on login
 
@@ -42,7 +39,7 @@ Scenario: Click on login button and enter user and password and click on login
  When Enter the URL "https://demowebshop.tricentis.com/" 
 Then click logged in
 Then enter username and password and click enter
-=======
+
 @cart
 Scenario: add cart
 
@@ -52,4 +49,4 @@ Then click logged in
 Then enter username and password and click enter
 
 Then click phone and add to cart
->>>>>>> Dev2
+
