@@ -7,9 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\nitin.goel\\eclipse-workspace\\CucumberDemoWeb\\src\\test\\java\\Features\\DemoWebShop.feature",
+		features = "C:\\Users\\nitin.goel\\eclipse-workspace\\Nitin_G\\src\\test\\java\\Features\\DemoWebShop.feature",
 		glue={"StepDefinitions"},
-		tags = "@DemoWeb",
+		tags = "@cart",
 		dryRun=false,		
 		plugin= {"pretty"},
 		monochrome = true
