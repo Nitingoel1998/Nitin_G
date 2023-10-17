@@ -84,13 +84,13 @@ public class DemoWebShop {
 		l.getclick().click();
 	}
 
-	@Then("Click on save button")
-	public void click_on_save_button() {
-		
-	
-	    l.getSave().click();
-		driver.quit();
-	}
+//	@Then("Click on save button")
+//	public void click_on_save_button() {
+//		
+//	
+//	    l.getSave().click();
+//		driver.quit();
+//	}
 
 	
 }
