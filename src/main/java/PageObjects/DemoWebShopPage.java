@@ -58,6 +58,18 @@ import org.openqa.selenium.support.PageFactory;
 		@FindBy(id = "register-button")
 		WebElement Register_Button;
 
+		@FindBy(xpath = "(//a[contains(text(),'Computers')])[1]")
+		WebElement ComputerTab;
+		@FindBy(xpath = "(//a[contains(text(),'Desktops')])[1]")
+		WebElement Desktops;
+		@FindBy(xpath = "//select[@id='products-orderby']/option[contains(text(),'Name: A to Z')]")
+		WebElement SortDropdown;
+		@FindBy(xpath = "(//div[@class='picture']/a/img)[1]")
+		WebElement firstLaptop;
+		@FindBy(xpath = "//input[@value='Add to compare list']")
+		WebElement AddtoCompareButton;
+		@FindBy(xpath = "//a[text()='Log out']")
+		WebElement LogoutButton;
 
 		public void click_register_link_page() {
 			RegisterLink.click();
@@ -82,6 +94,14 @@ import org.openqa.selenium.support.PageFactory;
 		}
 
 
-
+         public void Add_to_Compare_laptop() {
+        	 Actions action = new Actions(driver);
+        	 action.moveToElement(ComputerTab).build().perform();
+        	 Desktops.click();
+        	 SortDropdown.click();
+        	 firstLaptop.click();
+        	 AddtoCompareButton.click();
+        	 LogoutButton.click();
+         }
 	// Identifiers
 }

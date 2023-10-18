@@ -95,5 +95,15 @@ public class DemoWebShop {
 		driver.quit();
 
 	}
+	
+	@Then("Select laptop and click on Add to compare")
+
+	public void Select_laptop_and_Add_to_Compare() {
+
+		registerUser.Add_to_Compare_laptop();
+
+		driver.quit();
+
+	}
 }
 
