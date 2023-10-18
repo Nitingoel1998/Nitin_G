@@ -44,8 +44,23 @@ import org.openqa.selenium.support.PageFactory;
 		@FindBy(id = "LastName")
 		WebElement LastName;
 
-	 
-
+		@FindBy(xpath = "(//a[contains(text(),'Gift Cards')])[1]")
+		WebElement Gift_Cards;
+		@FindBy(xpath = "(//div[@class='picture']/a/img)[1]")
+		WebElement Gift_Cards_Img1;
+		@FindBy(xpath = "//input[@class='recipient-email']")
+		WebElement Recipient_email;
+		@FindBy(xpath = "//input[@class='recipient-name']")
+		WebElement Recipient_name;
+		@FindBy(xpath = "//textarea[@class='message']")
+		WebElement emailTextMessage;
+		@FindBy(xpath = "//input[@value='Email a friend']")
+		WebElement emailButton;
+		@FindBy(xpath = "//input[@class='friend-email']")
+		WebElement friendemailid;
+		@FindBy(xpath = "//input[@name='send-email']")
+		WebElement sendEmail;
+		
 		@FindBy(id = "Email")
 		WebElement Email;
 
@@ -103,5 +118,18 @@ import org.openqa.selenium.support.PageFactory;
         	 AddtoCompareButton.click();
         	 LogoutButton.click();
          }
+public void sendGiftcard() {
+	Gift_Cards.click();
+	Gift_Cards_Img1.click();
+	Recipient_email.click();
+	Recipient_email.sendKeys("test1@gmail.com");
+	Recipient_name.sendKeys("Test1");
+	emailTextMessage.sendKeys("Send Message");
+	emailButton.click();
+	friendemailid.sendKeys("Test2@gmail.com");
+	sendEmail.click();
+}
+
+
 	// Identifiers
 }

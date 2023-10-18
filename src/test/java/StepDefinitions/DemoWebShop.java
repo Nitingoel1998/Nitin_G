@@ -105,5 +105,16 @@ public class DemoWebShop {
 		driver.quit();
 
 	}
+
+	@Then("click gift card and send to a friend")
+
+	public void click_gift_card_and_send_to_friend() {
+		registerUser.sendGiftcard();
+		
+		driver.quit();
+
+	}
+	
+
 }
 

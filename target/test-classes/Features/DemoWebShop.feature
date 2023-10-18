@@ -50,4 +50,17 @@ Given Open the browser
 When Enter the URL "https://demowebshop.tricentis.com/" 
 Then click logged in
 Then enter username and password and click enter
+
 Then Select laptop and click on Add to compare
+
+@giftCards
+
+Scenario: Send a Gift Card to a Friend
+
+
+Given Open the browser 
+When Enter the URL "https://demowebshop.tricentis.com/" 
+Then click logged in
+Then enter username and password and click enter
+Then click gift card and send to a friend
+

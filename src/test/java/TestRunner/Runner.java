@@ -9,7 +9,11 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "C:\\Users\\nitin.goel\\eclipse-workspace\\Nitin_G\\src\\test\\java\\Features\\DemoWebShop.feature",
 		glue={"StepDefinitions"},
-		tags = "@AddtoCompare",
+
+		tags = "@AddtoCompare and @giftCards",
+
+		
+
 		dryRun=false,		
 		plugin= {"pretty"},
 		monochrome = true
